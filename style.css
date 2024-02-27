@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=Epilogue:wght@300&family=Fraunces:opsz@9..144&family=Hanken+Grotesk:ital,wght@1,300&family=Inter&family=Montserrat&family=Outfit:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  display: flex;
+  font-family: "Inter", sans-serif;
+}
+
+#show {
+  position: absolute;
+  right: 70px;
+  top: 70px;
+  padding: 12px;
+  border-radius: 5px;
+}
+
+#hide {
+  padding: 12px;
+  border-radius: 5px;
+}
+
+dialog {
+  border-radius: 10px;
+  border: none;
+  box-shadow: -2px 4px 10px 2px rgb(84, 81, 81);
+}
+
+textarea {
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 15px;
+}
+
+input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+  width: 225px;
+}
+
+h2{
+    
+}
