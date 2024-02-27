@@ -19,6 +19,7 @@ body {
 }
 
 dialog {
+    padding: 20px;
   border-radius: 10px;
   border: none;
   box-shadow: -2px 4px 10px 2px rgb(84, 81, 81);
@@ -41,4 +42,12 @@ h2{
     position: absolute;
     top: 50px;
     left: 70px;
+}
+
+.add{
+    position: absolute;
+    bottom: -50px;
+    left: 110px;
+    padding: 10px;
+    margin-bottom: 10px;
 }
