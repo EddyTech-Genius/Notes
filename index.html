@@ -10,14 +10,23 @@
     <div class="container">
       <h2>Notes</h2>
       <dialog id="dialog">
-        <button id="hide">Close</button>
         <h3>Title</h3>
-        <input type="text" placeholder="Enter title here....."/>
+        <input type="text" placeholder="Enter title here....." />
         <h3>Body</h3>
-        <textarea name="" id="textarea" cols="30" rows="10" placeholder="Enter text here....."></textarea>
-        <button class="add">Add Note</button>
+        <textarea
+          name=""
+          id="textarea"
+          cols="30"
+          rows="10"
+          placeholder="Enter text here....."
+        ></textarea
+        >\
+        <div class="bottom">
+          <button class="add">Add Note</button>
+          <button id="hide">Close</button>
+        </div>
       </dialog>
-      <button id="show">Add Note</button>
+      <button id="show">Create Notes</button>
     </div>
     <script src="script.js"></script>
   </body>
