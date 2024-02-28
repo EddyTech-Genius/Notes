@@ -11,7 +11,7 @@
       <h2>Notes</h2>
       <dialog id="dialog">
         <h3>Title</h3>
-        <input type="text" placeholder="Enter title here....." />
+        <input type="text" placeholder="Enter title here....." id="title" />
         <h3>Body</h3>
         <textarea
           name=""
@@ -19,14 +19,19 @@
           cols="30"
           rows="10"
           placeholder="Enter text here....."
-        ></textarea
-        >\
+        ></textarea>
         <div class="bottom">
-          <button class="add">Add Note</button>
+          <button id="add">Add Note</button>
           <button id="hide">Close</button>
         </div>
       </dialog>
       <button id="show">Create Notes</button>
+      <div id="wrapper">
+        <label for="" style="position: absolute; bottom: 750px; left: 100px"
+          >List of all notes</label
+        >
+        <div class="container"></div>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>
