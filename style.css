@@ -160,3 +160,50 @@ h2 {
   max-height: calc(100% - 90px);
   overflow: auto; */
 }
+
+/* .ChangeC {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  color: blue;
+} */
+
+.ChangeC:hover {
+  cursor: pointer;
+}
+
+.ChangeC::selection {
+  user-select: none;
+}
+
+.ChangeC{
+  width: 60px;
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: black;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+
+.colorField {
+  width: 60px;
+}
+
+.colorInput {
+  margin-top: 30px;
+}
+
+.initial-palette{
+  width: 60px;
+  position: absolute;
+  top: 15px;
+  left: 80px;
+  padding: 2px;
+  border: 1px solid blue;
+  border-radius: 10px;
+}
+
+
