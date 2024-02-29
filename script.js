@@ -30,12 +30,27 @@ addButton.addEventListener("click", () => {
 
   notesArr.push(newTask);
 
-notesArr.map(element => {
-  let list = document.createElement("p")
-  list.textContent = element.title
-  notes.append(list)
-})
+  notesArr.map((element) => {
+    let wrapper = document.createElement("div");
+    wrapper.classList.add("container");
+    // notes.append(list, para);
+
+    let list = document.createElement("li");
+    list.classList.add("list-item");
+
+    let title = document.createElement("h3");
+    title.classList.add("note-title");
+    title.textContent = element.title;
+
+    let para = document.createElement("p");
+    para.classList.add("note-text");
+    para.textContent = element.text;
+    list.append(title, para);
+    notes.appendChild(list);
+  });
+
+  // let input,
+  //   textArea = 0;
+
   console.log(notesArr);
-
 });
-
