@@ -72,11 +72,13 @@ h2 {
 .para-object {
 }
 
-.container {
-  margin: 2px solid yellow;
-  /* background-color: red; */
-  display: grid;
-  place-content: center;
-  grid-row: 3;
+#wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.container {
+
+  background-color: red;
+}

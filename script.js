@@ -17,10 +17,6 @@ hideButton.addEventListener("click", () => {
   dialog.close();
 });
 
-// input.addEventListener("change", () => {
-//   console.log("car");
-// });
-
 addButton.addEventListener("click", () => {
   let newTask = {
     id: crypto.randomUUID(),
@@ -30,27 +26,28 @@ addButton.addEventListener("click", () => {
 
   notesArr.push(newTask);
 
-  notesArr.map((element) => {
-    let wrapper = document.createElement("div");
-    wrapper.classList.add("container");
-    // notes.append(list, para);
+  // Create elements for the new note
+  let list = document.createElement("li");
+  list.classList.add("list-item");
 
-    let list = document.createElement("li");
-    list.classList.add("list-item");
+  let title = document.createElement("h3");
+  title.classList.add("note-title");
+  title.textContent = newTask.title;
 
-    let title = document.createElement("h3");
-    title.classList.add("note-title");
-    title.textContent = element.title;
+  let para = document.createElement("p");
+  para.classList.add("note-text");
+  para.textContent = newTask.text;
 
-    let para = document.createElement("p");
-    para.classList.add("note-text");
-    para.textContent = element.text;
-    list.append(title, para);
-    notes.appendChild(list);
-  });
+  // Append elements to the list item
+  list.append(title, para);
 
-  // let input,
-  //   textArea = 0;
+  // Append the list item to the notes container
+  notes.appendChild(list);
+
+  // Clear input fields after adding the note
+  input.value = "";
+  textArea.value = "";
 
   console.log(notesArr);
 });
+
