@@ -18,6 +18,8 @@ hideButton.addEventListener("click", () => {
 });
 
 addButton.addEventListener("click", () => {
+  dialog.close();
+
   let newTask = {
     id: crypto.randomUUID(),
     title: input.value,
@@ -30,7 +32,7 @@ addButton.addEventListener("click", () => {
   let list = document.createElement("li");
   list.classList.add("list-item");
 
-  let title = document.createElement("h3");
+  let title = document.createElement("h2");
   title.classList.add("note-title");
   title.textContent = newTask.title;
 
@@ -50,4 +52,3 @@ addButton.addEventListener("click", () => {
 
   console.log(notesArr);
 });
-
