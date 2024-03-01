@@ -176,7 +176,7 @@ h2 {
   user-select: none;
 }
 
-.ChangeC{
+.ChangeC {
   width: 60px;
   padding: 5px;
   border: none;
@@ -196,7 +196,7 @@ h2 {
   margin-top: 30px;
 }
 
-.initial-palette{
+.initial-palette {
   width: 60px;
   position: absolute;
   top: 15px;
@@ -206,4 +206,15 @@ h2 {
   border-radius: 10px;
 }
 
+.edit-notes {
+  position: absolute;
+  bottom: 0;
+}
 
+.edit-notes::selection{
+  user-select: none;
+}
+
+.edit-notes:hover{
+  cursor: pointer;
+}

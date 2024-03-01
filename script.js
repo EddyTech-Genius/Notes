@@ -69,7 +69,21 @@ addButton.addEventListener("click", () => {
   // Clear input fields after adding the note
   input.value = "";
   textArea.value = "";
-  colorField.value = "white";
+  colorField.value = "";
 
+  //test
   console.log(notesArr);
+
+  //edit function
+  let editList = document.createElement("a");
+  editList.classList.add("edit-notes");
+  editList.textContent = "Edit";
+
+  list.appendChild(editList);
+
+  editList.addEventListener("click", () => {
+    dialog.showModal();
+
+    return list.textContent;
+  });
 });
